@@ -1,0 +1,52 @@
+---
+title: "RapidFieldAssessments"
+author: "VB"
+date: "2024-09-17"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+```{r load data, echo=FALSE}
+library(readxl)
+Soils <- read_excel("~/Downloads/Rapid Field Assessment Data.xlsx", 
+    sheet = "Soils")
+library(readxl)
+Silvopasture <- read_excel("~/Downloads/Rapid Field Assessment Data (1).xlsx", 
+    sheet = "Pasture")
+library(readxl)
+Vegetation <- read_excel("~/Downloads/Rapid Field Assessment Data (1).xlsx", 
+    sheet = "Other Veg")
+```
+
+
+```{r load liibraries, echo=FALSE}
+library(tidyverse)
+library(dplyr)
+library(ggplot2)
+library(wesanderson)
+library(ggsci)
+library(viridisLite)
+```
+
+```{r soil change and pivot}
+cleaned_data <- Soils %>%
+  select(-Horizon_1, -Horizon_1_depth, -Horizon_2, -Horizon_2_depth, 
+         -Horizon_3, - Horizon_3_depth)
+
+reshaped_soils <- cleaned_data %>%
+  pivot_wider(names_from = horizon_number, 
+              values_from = c(horizon_type, depth_cm),
+              names_sep = "_horizon_")
+
+soils_new <- reshaped_soils %>% 
+  select(-depth_cm_horizon_ND, -depth_cm_horizon_NA, -horizon_type_horizon_NA, 
+         -horizon_type_horizon_ND, -Sample_Notes)
+
+soils_new_clean <- soils_new %>% 
+  mutate(bare_soil_percent = as.numeric(replace(bare_soil_percent, bare_soil_percent == "ND", NA)))
+```
+
+
