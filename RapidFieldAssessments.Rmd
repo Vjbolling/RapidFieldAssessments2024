@@ -49,4 +49,47 @@ soils_new_clean <- soils_new %>%
   mutate(bare_soil_percent = as.numeric(replace(bare_soil_percent, bare_soil_percent == "ND", NA)))
 ```
 
+```{r soil summary stats}
+o_horizon_data <- soils_new %>%
+  filter(horizon_type_horizon_1 == "O")
+o_horizon_data <- o_horizon_data %>%
+  separate(depth_cm_horizon_1, into = c("depth_start", "depth_end"), 
+           sep = "-", convert = TRUE)
+
+o_horizon_data %>%
+  summarize(
+    mean_depth_end = mean(depth_end),
+    median_depth_end = median(depth_end),
+    sd_depth_end = sd(depth_end))
+```
+
+```{r mulch, bare, CWD}
+soils_new %>% 
+  count(mulch_leaves_type)
+
+soils_new %>% 
+  count(CWD)
+
+soils_new_clean %>% 
+  summarize(avg_bare = mean(bare_soil_percent, na.rm = TRUE))
+```
+
+```{r pasture summary}
+silvo_summary <- Silvopasture %>% 
+  summarize(mean_legumes = mean(legumes_percent), 
+            median_legumes = median(legumes_percent), 
+            mean_grass = mean(grass_percent), 
+            median_grass = median(grass_percent), 
+            mean_other = mean(other_plants_percent), 
+            median_other = median(other_plants_percent)) 
+
+Silvopasture %>%   
+  filter(dot_density != "NA") %>%
+            summarize(mean_dots = mean(dot_density, na.rm = TRUE), 
+            median_dots = median(dot_density, na.rm = TRUE)
+          )
+
+## error reads that NAs introduced by coercion- must go back to original dataset
+## and remove NDs to make this easier
+```
 
