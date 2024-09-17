@@ -19,6 +19,9 @@ Silvopasture <- read_excel("~/Downloads/Rapid Field Assessment Data (1).xlsx",
 library(readxl)
 Vegetation <- read_excel("~/Downloads/Rapid Field Assessment Data (1).xlsx", 
     sheet = "Other Veg")
+library(readxl)
+Trees <- read_excel("~/Downloads/Rapid Field Assessment Data (1).xlsx", 
+    sheet = "Trees")
 ```
 
 
@@ -28,7 +31,7 @@ library(dplyr)
 library(ggplot2)
 library(wesanderson)
 library(ggsci)
-library(viridisLite)
+library(fgeo.analyze)
 ```
 
 ```{r soil change and pivot}
@@ -75,22 +78,26 @@ soils_new_clean %>%
 ```
 
 ```{r pasture summary}
-silvo_summary <- Silvopasture %>% 
+Silvopasture %>% 
   summarize(mean_legumes = mean(legumes_percent), 
             median_legumes = median(legumes_percent), 
             mean_grass = mean(grass_percent), 
             median_grass = median(grass_percent), 
             mean_other = mean(other_plants_percent), 
             median_other = median(other_plants_percent)) 
+```
 
+``` {r density and forage}
 Silvopasture %>%   
   filter(dot_density != "NA") %>%
-            summarize(mean_dots = mean(dot_density, na.rm = TRUE), 
-            median_dots = median(dot_density, na.rm = TRUE)
-          )
+            summarize(mean_dots = mean(as.numeric(dot_density, na.rm = TRUE)), 
+            median_dots = median(dot_density, na.rm = TRUE)) 
 
-## error reads that NAs introduced by coercion- must go back to original dataset
-## and remove NDs to make this easier
+Silvopasture %>%   
+  filter(forage_yield_in != "NA") %>%
+            summarize(mean_yield = mean(as.numeric(forage_yield_in, na.rm = TRUE)), 
+            median_yield = median(forage_yield_in, na.rm = TRUE))
+
 ```
 
 ```{r pasture regression}
@@ -156,6 +163,25 @@ ggplot(species_by_functional_group, aes(x = system, y = species_count, fill = fu
                                "tree" = "sienna2")) + 
   theme(axis.text.x = element_text(angle = 45, hjust = 1))
 
+```
+```{r basal area long}
+Plots <- Trees %>% 
+  group_by(farm_name, site) %>% 
+  distinct(plot) %>% 
+  summarize(PlotCount = n())
+
+tree_count <- Trees %>%  
+  filter(DBH > 12.5) %>%
+  group_by(farm_name, site) %>%           
+  summarize(TreeCount = n()) 
+
+trees_plots <- full_join(tree_count, Plots)
+
+Trees <- Trees %>%
+  mutate(DBH_m = DBH / 100) # Convert DBH from cm to meters
+  
+basal_area <- trees_plots %>% 
+  mutate(basal_area = (TreeCount * 4.59)/PlotCount)
 ```
 
 ```{r bar graph families}
