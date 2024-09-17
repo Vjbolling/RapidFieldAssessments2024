@@ -93,3 +93,89 @@ Silvopasture %>%
 ## and remove NDs to make this easier
 ```
 
+```{r pasture regression}
+bare_soil_lm <- lm(bare_soil_percent ~ canopy_percent, data = Silvopasture)
+summary(bare_soil_lm)
+
+
+forage_height_lm <- lm(forage_yield_in ~ canopy_percent, data = Silvopasture)
+summary(forage_height_lm)
+
+#silvo_dot_reduced <- Silvopasture %>%
+#  filter(!is.na (dot_density))
+#dot_density_lm <- lm(dot_density ~ canopy_percent, data = silvo_dot_reduced)
+#summary(dot_density_lm)
+```
+
+```{r veg basic summary stats}
+##number of distinct species
+Vegetation %>%
+  distinct(common_name) %>%
+  nrow()
+
+##avg percent cover by site
+Vegetation %>%
+  group_by(farm_name) %>%
+  summarize(mean_percent_cover = mean(percent_cover, na.rm = TRUE))
+## mean structure value 
+Vegetation %>%
+  group_by(farm_name) %>%
+  summarize(mean_structure = mean(structure, na.rm = TRUE))
+#Vegetation %>% 
+ # group_by(farm_name) %>%
+  #summarize(average_percent_cover = mean(percent_cover))
+```
+
+```{r other veg functional groups}
+# Frequency of species occurrences
+Vegetation %>%
+  group_by(common_name) %>%
+  summarize(frequency = n_distinct(farm_name)) %>%
+  arrange(desc(frequency)) %>% 
+  slice(1:10)
+
+#number of different species present in each type of system 
+Vegetation %>%
+  group_by(system) %>%
+  summarize(frequency = n_distinct(common_name)) %>%
+  arrange(system, desc(frequency))
+
+species_by_functional_group <- Vegetation %>%
+  group_by(system, functional_group) %>%
+  summarize(species_count = n_distinct(common_name))
+
+ggplot(species_by_functional_group, aes(x = system, y = species_count, fill = functional_group)) +
+  geom_bar(stat = "identity") +
+  theme_minimal() +
+  labs(title = "Number of Species by Functional Group for Each System",
+       x = "System Type",
+       y = "Number of Species",
+       fill = "Functional Group") +
+  scale_fill_manual(values = c("herbaceous" = "seagreen", 
+                               "shrub/woody plant" = "burlywood2", 
+                               "tree" = "sienna2")) + 
+  theme(axis.text.x = element_text(angle = 45, hjust = 1))
+
+```
+
+```{r bar graph families}
+family_counts <- Vegetation %>% 
+  filter(site != "Reference") %>%
+  group_by(farm_name) %>%
+  summarise(num_families = n_distinct(family))
+
+ggplot(family_counts, aes(x = farm_name, 
+                                            y = num_families,
+                      fill = farm_name, width = 0.7)) +
+  geom_bar(stat = "identity") +
+  scale_fill_discrete() + 
+  labs(title = "Number of Taxonomic Families Across Sites",
+       x = "Site",
+       y = "Number of Taxonomic Families") +
+  theme_minimal() +
+  theme(legend.position = "none",  # Remove the legend
+        axis.text.x = element_text(angle = 45, hjust = 1),  # Rotate x-axis labels
+        plot.title = element_text(hjust = 0.5)) +  # Center the plot title
+  scale_x_discrete(labels = function(x) str_wrap(x, width = 25)) 
+```
+
