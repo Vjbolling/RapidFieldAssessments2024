@@ -11,16 +11,16 @@ knitr::opts_chunk$set(echo = TRUE)
 
 ```{r load data, echo=FALSE}
 library(readxl)
-Soils <- read_excel("~/Downloads/Rapid Field Assessment Data.xlsx", 
+Soils <- read_excel("~/Downloads/Rapid Field Assessment Data (3).xlsx", 
     sheet = "Soils")
 library(readxl)
-Silvopasture <- read_excel("~/Downloads/Rapid Field Assessment Data (1).xlsx", 
+Silvopasture <- read_excel("~/Downloads/Rapid Field Assessment Data (3).xlsx", 
     sheet = "Pasture")
 library(readxl)
-Vegetation <- read_excel("~/Downloads/Rapid Field Assessment Data (1).xlsx", 
+Vegetation <- read_excel("~/Downloads/Rapid Field Assessment Data (3).xlsx", 
     sheet = "Other Veg")
 library(readxl)
-Trees <- read_excel("~/Downloads/Rapid Field Assessment Data (1).xlsx", 
+Trees <- read_excel("~/Downloads/Rapid Field Assessment Data (3).xlsx", 
     sheet = "Trees")
 ```
 
@@ -32,12 +32,16 @@ library(ggplot2)
 library(wesanderson)
 library(ggsci)
 library(fgeo.analyze)
+library(viridisLite)
+library(RColorBrewer)
 ```
 
+## Soil data pivot to create separate columns for each horizon depth and to 
+##otherwise clean data
 ```{r soil change and pivot}
-cleaned_data <- Soils %>%
-  select(-Horizon_1, -Horizon_1_depth, -Horizon_2, -Horizon_2_depth, 
-         -Horizon_3, - Horizon_3_depth)
+#cleaned_data <- Soils %>%
+#  select(-Horizon_1, -Horizon_1_depth, -Horizon_2, -Horizon_2_depth, 
+ #        -Horizon_3, - Horizon_3_depth)
 
 reshaped_soils <- cleaned_data %>%
   pivot_wider(names_from = horizon_number, 
@@ -51,8 +55,10 @@ soils_new <- reshaped_soils %>%
 soils_new_clean <- soils_new %>% 
   mutate(bare_soil_percent = as.numeric(replace(bare_soil_percent, bare_soil_percent == "ND", NA)))
 ```
-
+## Soil summary stats: O horizon 
 ```{r soil summary stats}
+## adjust to include plots that have no O horizon
+##make boxplots of soil depth by horizon type
 o_horizon_data <- soils_new %>%
   filter(horizon_type_horizon_1 == "O")
 o_horizon_data <- o_horizon_data %>%
@@ -65,6 +71,7 @@ o_horizon_data %>%
     median_depth_end = median(depth_end),
     sd_depth_end = sd(depth_end))
 ```
+## Summary stats mulch, bare ground, CWD Soils data
 
 ```{r mulch, bare, CWD}
 soils_new %>% 
@@ -77,6 +84,7 @@ soils_new_clean %>%
   summarize(avg_bare = mean(bare_soil_percent, na.rm = TRUE))
 ```
 
+##Pasture summary stats plants in Quadrat
 ```{r pasture summary}
 Silvopasture %>% 
   summarize(mean_legumes = mean(legumes_percent), 
@@ -86,7 +94,7 @@ Silvopasture %>%
             mean_other = mean(other_plants_percent), 
             median_other = median(other_plants_percent)) 
 ```
-
+## Dot Density and Forage Quality Summary Stats
 ``` {r density and forage}
 Silvopasture %>%   
   filter(dot_density != "NA") %>%
@@ -100,6 +108,7 @@ Silvopasture %>%
 
 ```
 
+## Silvopasture regression canopy coverage, bare, forage yield, etc. 
 ```{r pasture regression}
 bare_soil_lm <- lm(bare_soil_percent ~ canopy_percent, data = Silvopasture)
 summary(bare_soil_lm)
@@ -109,11 +118,12 @@ forage_height_lm <- lm(forage_yield_in ~ canopy_percent, data = Silvopasture)
 summary(forage_height_lm)
 
 #silvo_dot_reduced <- Silvopasture %>%
-#  filter(!is.na (dot_density))
+#  filter(as.numeric(dot_density))
 #dot_density_lm <- lm(dot_density ~ canopy_percent, data = silvo_dot_reduced)
 #summary(dot_density_lm)
 ```
 
+## Other veg basic summary stats
 ```{r veg basic summary stats}
 ##number of distinct species
 Vegetation %>%
@@ -132,21 +142,26 @@ Vegetation %>%
  # group_by(farm_name) %>%
   #summarize(average_percent_cover = mean(percent_cover))
 ```
+## Vegetation inquiry by functional Group
 
 ```{r other veg functional groups}
-# Frequency of species occurrences
+# Number of farms each of the ten most common species appears in 
 Vegetation %>%
   group_by(common_name) %>%
   summarize(frequency = n_distinct(farm_name)) %>%
   arrange(desc(frequency)) %>% 
   slice(1:10)
 
-#number of different species present in each type of system 
-Vegetation %>%
+#average number of species by system type
+species_count <- Vegetation %>%
   group_by(system) %>%
-  summarize(frequency = n_distinct(common_name)) %>%
-  arrange(system, desc(frequency))
+  summarise(SpeciesCount = n_distinct(common_name))
 
+species_count %>%
+  group_by(system) %>%
+  summarise(AverageSpecies = mean(SpeciesCount))
+
+#number of species of each functional group type for each system
 species_by_functional_group <- Vegetation %>%
   group_by(system, functional_group) %>%
   summarize(species_count = n_distinct(common_name))
@@ -164,8 +179,10 @@ ggplot(species_by_functional_group, aes(x = system, y = species_count, fill = fu
   theme(axis.text.x = element_text(angle = 45, hjust = 1))
 
 ```
+## Basal area calculations for trees over 12.5cm 
 ```{r basal area long}
-Plots <- Trees %>% 
+##This math is all wrong!!! Figure out why numbers are so freakin big? 
+Plots <- Vegetation %>% 
   group_by(farm_name, site) %>% 
   distinct(plot) %>% 
   summarize(PlotCount = n())
@@ -176,14 +193,11 @@ tree_count <- Trees %>%
   summarize(TreeCount = n()) 
 
 trees_plots <- full_join(tree_count, Plots)
-
-Trees <- Trees %>%
-  mutate(DBH_m = DBH / 100) # Convert DBH from cm to meters
   
 basal_area <- trees_plots %>% 
   mutate(basal_area = (TreeCount * 4.59)/PlotCount)
 ```
-
+##Bar graphs of numbers of families present at each site
 ```{r bar graph families}
 family_counts <- Vegetation %>% 
   filter(site != "Reference") %>%
@@ -203,5 +217,30 @@ ggplot(family_counts, aes(x = farm_name,
         axis.text.x = element_text(angle = 45, hjust = 1),  # Rotate x-axis labels
         plot.title = element_text(hjust = 0.5)) +  # Center the plot title
   scale_x_discrete(labels = function(x) str_wrap(x, width = 25)) 
+```
+```{r boxplots}
+boxplot(percent_cover ~ functional_group, data = Vegetation,
+        main = "Distribution of Percent Cover by Vegetation Type",
+        xlab = "Vegetation Type", ylab = "Percent Cover",
+        col = "lightblue", border = "darkblue")
+
+##boxplot of DBH by species for the 10 most common species in each system type
+
+##Boxplot of percent cover by vegetation type
+
+```
+```{r silvopivot}
+silvo_wide <- Silvopasture %>% 
+  select(farm, site, plot, subplot, canopy_percent, legumes_percent, 
+         grass_percent, dot_density, 
+                    other_plants_percent, bare_soil_percent, 
+                    mulch_leaves_per_cover, thatch_percent, forage_yield_in) %>%
+  pivot_wider(
+    names_from = subplot, 
+    values_from = c(canopy_percent, legumes_percent, grass_percent, dot_density, 
+                    other_plants_percent, bare_soil_percent, 
+                    mulch_leaves_per_cover, thatch_percent, forage_yield_in), 
+    names_glue = "{.value}_subplot_{subplot}" # This will rename the columns with subplot suffixes
+  )
 ```
 
