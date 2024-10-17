@@ -61,11 +61,12 @@ soils_new_clean <- soils_new %>%
 ##make boxplots of soil depth by horizon type
 o_horizon_data <- soils_new %>%
   filter(horizon_type_horizon_1 == "O")
-o_horizon_data <- o_horizon_data %>%
-  separate(depth_cm_horizon_1, into = c("depth_start", "depth_end"), 
+
+soils_final <- o_horizon_data %>%
+  separate(depth_cm_horizon_1, into = c("h1_depth_start", "h1_depth_end"), 
            sep = "-", convert = TRUE)
 
-o_horizon_data %>%
+soils_final %>%
   summarize(
     mean_depth_end = mean(depth_end),
     median_depth_end = median(depth_end),
