@@ -1,0 +1,371 @@
+"farm","site","system","plot","bare_soil_percent","mulch_leaves_type","mulch_leaves_percent","CWD","large_CWD","horizon_type_horizon_1","horizon_type_horizon_2","horizon_type_horizon_3","depth_cm_horizon_1_start","depth_cm_horizon_1_end","depth_cm_horizon_2_start","depth_cm_horizon_2_end","depth_cm_horizon_3_start","depth_cm_horizon_3_end"
+"Heart's Content","Forest Garden","Forest Garden","A1",15,"Leaves","10","low","yes","O","E","A","0","5","5",6,"6",10
+"Heart's Content","Forest Garden","Forest Garden","A2",10,"Leaves","10","low","no","O","A","","0","4","4",10,"NULL",NA
+"Heart's Content","Forest Garden","Forest Garden","A3",15,"Leaves","15","low","yes","O","E","","0","8","8",10,"NULL",NA
+"Heart's Content","Forest Garden","Forest Garden","B1",10,"Leaves","15","medium","yes","O","E","A","0","4","4",5,"5",10
+"Heart's Content","Forest Garden","Forest Garden","B2",NA,NA,NA,"low","ND","O","A","","0","4","4",10,"NULL",NA
+"Heart's Content","Forest Garden","Forest Garden","B3",20,"Leaves","10","medium","yes","O","","","0","4","NULL",NA,"NULL",NA
+"Heart's Content","Forest Garden","Forest Garden","B3",NA,"Leaves","10","medium","yes","","A","","NULL",NA,"4",10,"NULL",NA
+"Heart's Content","Reference","Forest Garden Reference","B1",NA,"Leaves","20","ND","ND","","","","NULL",NA,"NULL",NA,"NULL",NA
+"Blue Hills Foundation","Silvopasture 1","Silvopasture","A1",NA,"Pine Litter","60","medium","yes","O","A","","0","4.5","4.5",10,"NULL",NA
+"Blue Hills Foundation","Silvopasture 1","Silvopasture","A2",NA,"Pine Litter","40","high","yes","O","A","","0","6.5","6.5",10,"NULL",NA
+"Blue Hills Foundation","Silvopasture 1","Silvopasture","A3",NA,"Pine Litter","90","high","yes","O","A","","0","4.5","4.5",10,"NULL",NA
+"Blue Hills Foundation","Silvopasture 1","Silvopasture","B3",NA,"Pine Litter","50","medium","yes","O","A","","0","3.5","3.5",10,"NULL",NA
+"Edgewood Nursery","Polyculture","Polyculture","A1",10,"Mixed Litter","10","low","ND","O","","","0","10","NULL",NA,"NULL",NA
+"Edgewood Nursery","Polyculture","Polyculture","A2",5,"Leaves","10","low","ND","O","","","0","10","NULL",NA,"NULL",NA
+"Edgewood Nursery","Polyculture","Polyculture","A3",30,"Leaves","10","medium","yes","O","","","0","10","NULL",NA,"NULL",NA
+"Edgewood Nursery","Polyculture","Polyculture","A4",15,"Leaves","15","medium","yes","O","","","0","10","NULL",NA,"NULL",NA
+"Edgewood Nursery","Polyculture","Polyculture","B1",15,"Woodchips","15","ND","ND","O","","","0","10","NULL",NA,"NULL",NA
+"Edgewood Nursery","Polyculture","Polyculture","B2",0,"Woodchips","75","ND","ND","O","","","0","10","NULL",NA,"NULL",NA
+"Edgewood Nursery","Reference","Polyculture Reference","A1",10,"Mixed Litter","25","low","yes","O, A","","","c(""0","1.5"", ""1.5","NULL",NA,"NULL",NA
+"Edgewood Nursery","Reference","Polyculture Reference","A2",10,"Pine Litter","30","low","no","A","","","0","10","NULL",NA,"NULL",NA
+"Edgewood Nursery","Reference","Polyculture Reference","A3",40,"Pine Litter","10","none","no","A","","","0","10","NULL",NA,"NULL",NA
+"Edgewood Nursery","Reference","Polyculture Reference","A4",75,"none","0","none","no","ND","","","ND",NA,"NULL",NA,"NULL",NA
+"Edgewood Nursery","Reference","Polyculture Reference","B1",0,"none","0","none","no","A","","","0","10","NULL",NA,"NULL",NA
+"Edgewood Nursery","Reference","Polyculture Reference","B2",5,"none","0","none","no","A","","","0","10","NULL",NA,"NULL",NA
+"Mt. Joy","Polyculture","Polyculture","A1",NA,NA,NA,NA,NA,"AP","","","0","10","NULL",NA,"NULL",NA
+"Mt. Joy","Polyculture","Polyculture","A2",NA,NA,NA,NA,NA,"AP","","","0","10","NULL",NA,"NULL",NA
+"Mt. Joy","Polyculture","Polyculture","B1",NA,NA,NA,NA,NA,"AP","","","0","10","NULL",NA,"NULL",NA
+"Mt. Joy","Polyculture","Polyculture","B2",NA,NA,NA,NA,NA,"AP","","","0","10","NULL",NA,"NULL",NA
+"Mt. Joy","Polyculture","Polyculture","C1",NA,NA,NA,NA,NA,"AP","","","0","10","NULL",NA,"NULL",NA
+"Mt. Joy","Polyculture","Polyculture","C2",NA,NA,NA,NA,NA,"AP","","","0","10","NULL",NA,"NULL",NA
+"Mt. Joy","Reference","Polyculture Reference","A1",NA,NA,NA,NA,NA,"AP","","","0","10","NULL",NA,"NULL",NA
+"Mt. Joy","Reference","Polyculture Reference","A2",NA,NA,NA,NA,NA,"AP","","","0","10","NULL",NA,"NULL",NA
+"Mt. Joy","Reference","Polyculture Reference","A3",0,"ND","ND","ND","ND","AP","","","0","10","NULL",NA,"NULL",NA
+"Mt. Joy","Reference","Polyculture Reference","B1",NA,NA,NA,NA,NA,"AP","","","0","10","NULL",NA,"NULL",NA
+"Mt. Joy","Reference","Polyculture Reference","B2",NA,NA,NA,NA,NA,"AP","","","0","10","NULL",NA,"NULL",NA
+"Mt. Joy","Reference","Polyculture Reference","B3",0,"ND","ND","ND","ND","AP","","","0","10","NULL",NA,"NULL",NA
+"Dave Jacke","Forest Garden","Forest Garden","A1",0,"Cardboard, Woodchips","10","low","no","AP","","","0","10","NULL",NA,"NULL",NA
+"Dave Jacke","Forest Garden","Forest Garden","A2",0,"none","0","low","no","AP","","","0","10","NULL",NA,"NULL",NA
+"Dave Jacke","Forest Garden","Forest Garden","A3",0,"none","0","medium","no","AP","","","0","10","NULL",NA,"NULL",NA
+"Dave Jacke","Forest Garden","Forest Garden","A4",0,"Leaves","10","none","no","AP","","","0","10","NULL",NA,"NULL",NA
+"Dave Jacke","Forest Garden","Forest Garden","A5",0,"Cardboard","5","low","no","AP","","","0","10","NULL",NA,"NULL",NA
+"Dave Jacke","Forest Garden","Forest Garden","A6",0,"Woodchips","5","none","no","AP","","","0","10","NULL",NA,"NULL",NA
+"MOFGA","MHO","Polyculture","A1",5,"Woodchips","5","none","no","AP","","","0","10","NULL",NA,"NULL",NA
+"MOFGA","MHO","Polyculture","A2",0,"Woodchips","5","none","no","A, B","","","c(""0","7"", ""7","NULL",NA,"NULL",NA
+"MOFGA","MHO","Polyculture","A3",5,"Woodchips","10","low","no","AP","","","0","10","NULL",NA,"NULL",NA
+"MOFGA","MHO","Polyculture","B1",0,"none","0","none","no","AP","","","0","10","NULL",NA,"NULL",NA
+"MOFGA","MHO","Polyculture","B2",0,"Woodchips","5","none","no","AP","","","0","10","NULL",NA,"NULL",NA
+"MOFGA","MHO","Polyculture","B3",10,"Woodchips","10","none","no","AP","","","0","10","NULL",NA,"NULL",NA
+"MOFGA","MHO Reference","Polyculture Reference","A1",10,"none","0","none","no","A","","","0","10","NULL",NA,"NULL",NA
+"MOFGA","MHO Reference","Polyculture Reference","A2",15,"none","0","none","no","O, B","","","c(""0","7"", ""7","NULL",NA,"NULL",NA
+"MOFGA","MHO Reference","Polyculture Reference","A3",0,"none","0","none","no","A","","","0","10","NULL",NA,"NULL",NA
+"MOFGA","MHO Reference","Polyculture Reference","A4",0,"none","0","none","no","O, A","","","c(""0","4"", ""4","NULL",NA,"NULL",NA
+"MOFGA","MHO Reference","Polyculture Reference","B1",0,"none","0","none","no","AP","","","0","10","NULL",NA,"NULL",NA
+"MOFGA","MHO Reference","Polyculture Reference","B2",0,"none","0","none","no","AP","","","0","10","NULL",NA,"NULL",NA
+"MOFGA","Polyculture","Polyculture","A1",0,"none","0","none","no","AP","","","0","10","NULL",NA,"NULL",NA
+"MOFGA","Polyculture","Polyculture","A2",10,"Straw","5","none","no","AP","","","0","10","NULL",NA,"NULL",NA
+"MOFGA","Polyculture","Polyculture","A3",5,"none","0","none","no","AP","","","0","10","NULL",NA,"NULL",NA
+"MOFGA","Polyculture","Polyculture","A4",0,"Leaves","5","none","no","AP","","","0","10","NULL",NA,"NULL",NA
+"MOFGA","Polyculture","Polyculture","B1",20,"Leaves","10","none","no","AP","","","0","10","NULL",NA,"NULL",NA
+"MOFGA","Polyculture","Polyculture","B2",0,"Leaves","5","none","no","AP","","","0","10","NULL",NA,"NULL",NA
+"MOFGA","Reference","Polyculture Reference","A1",0,"none","0","none","no","AP","","","0","10","NULL",NA,"NULL",NA
+"MOFGA","Reference","Polyculture Reference","A2",0,"none","0","none","no","AP","","","0","10","NULL",NA,"NULL",NA
+"MOFGA","Reference","Polyculture Reference","A3",0,"none","0","none","no","AP","","","0","10","NULL",NA,"NULL",NA
+"MOFGA","Reference","Polyculture Reference","B1",0,"none","0","none","no","AP","","","0","10","NULL",NA,"NULL",NA
+"MOFGA","Reference","Polyculture Reference","B2",0,"none","0","none","no","AP","","","0","10","NULL",NA,"NULL",NA
+"MOFGA","Reference","Polyculture Reference","B3",0,"none","0","none","no","AP","","","0","10","NULL",NA,"NULL",NA
+"Levesque","Forest Farm","Forest Farm","A1",40,"none","0","medium","yes","O","A","","0","2","2",10,"NULL",NA
+"Levesque","Forest Farm","Forest Farm","A2",5,"none","0","high","yes","O","A","","0","4","4",10,"NULL",NA
+"Levesque","Forest Farm","Forest Farm","A3",5,"none","0","medium","yes","O","A","","0","3","3",10,"NULL",NA
+"Levesque","Forest Farm","Forest Farm","A4",10,"Leaves","20","medium","yes","","","","NULL",NA,"NULL",NA,"NULL",NA
+"Levesque","Forest Farm","Forest Farm","A5",0,"none","0","low","no","","","","NULL",NA,"NULL",NA,"NULL",NA
+"Levesque","Forest Farm","Forest Farm","A6",0,"none","0","low","no","O","A","","0","4","4",10,"NULL",NA
+"Levesque","Reference","Forest Farm Reference","A1",0,"Leaves","70",NA,NA,"O","A","","0","3","3",10,"NULL",NA
+"Levesque","Reference","Forest Farm Reference","A2",5,"Leaves","70",NA,NA,"O","","","0","10","NULL",NA,"NULL",NA
+"Levesque","Reference","Forest Farm Reference","A3",10,"Leaves","75",NA,NA,"O","","","0","10","NULL",NA,"NULL",NA
+"Levesque","Reference","Forest Farm Reference","B1",5,"Leaves","85",NA,NA,"O","","","0","10","NULL",NA,"NULL",NA
+"Levesque","Reference","Forest Farm Reference","B2",0,"Leaves","80",NA,NA,"O","","","0","10","NULL",NA,"NULL",NA
+"Levesque","Reference","Forest Farm Reference","B3",5,"Leaves","70",NA,NA,"O","","","0","10","NULL",NA,"NULL",NA
+"Spahr","Forest Garden","Forest Garden","A1",0,"Hay","15","none","no","O","A","","0","2","2",10,"NULL",NA
+"Spahr","Forest Garden","Forest Garden","A2",0,"Hay","20","low","yes","O","A","","0","4","4",10,"NULL",NA
+"Spahr","Forest Garden","Forest Garden","B1",0,"none","0",NA,NA,"O","A","","0","5","5",10,"NULL",NA
+"Spahr","Forest Garden","Forest Garden","B2",0,"none","0",NA,NA,"O","A","","0","4","4",10,"NULL",NA
+"Spahr","Forest Garden","Forest Garden","C1",0,"Hemlock Litter","10","none","no","O","","","0","10","NULL",NA,"NULL",NA
+"Spahr","Forest Garden","Forest Garden","C2",0,"none","0","none","no","O","A","","0","2","2",10,"NULL",NA
+"Spahr","Reference","Forest Garden Reference","A1",5,"Leaves","70",NA,NA,"O","","","0","10","NULL",NA,"NULL",NA
+"Spahr","Reference","Forest Garden Reference","A2",0,"Leaves","70",NA,NA,"O","A","","0","4","4",10,"NULL",NA
+"Spahr","Reference","Forest Garden Reference","A3",0,"Leaves","50",NA,NA,"O","A","","0","2","2",10,"NULL",NA
+"Spahr","Reference","Forest Garden Reference","B1",NA,NA,NA,NA,NA,"O","A","","0","4","4",10,"NULL",NA
+"Spahr","Reference","Forest Garden Reference","B2",NA,NA,NA,NA,NA,"O","A","","0","5","5",10,"NULL",NA
+"Spahr","Reference","Forest Garden Reference","B3",NA,NA,NA,NA,NA,"O","","","0","10","NULL",NA,"NULL",NA
+"Flag Hill Farm","Silvopasture","Silvopasture","A1",5,"Leaves","5","low","no","AP","","","0","10","NULL",NA,"NULL",NA
+"Flag Hill Farm","Silvopasture","Silvopasture","A2",5,"Leaves","5","low","no","AP","","","0","10","NULL",NA,"NULL",NA
+"Flag Hill Farm","Silvopasture","Silvopasture","A3",5,"Leaves","5","none","no","AP","","","0","10","NULL",NA,"NULL",NA
+"Flag Hill Farm","Silvopasture","Silvopasture","B1",20,"none","0","low","no","AP","","","0","10","NULL",NA,"NULL",NA
+"Flag Hill Farm","Silvopasture","Silvopasture","B2",5,"none","0","low","no","AP","","","0","10","NULL",NA,"NULL",NA
+"Flag Hill Farm","Silvopasture","Silvopasture","B3",20,"Leaves","10","low","no","AP","","","0","10","NULL",NA,"NULL",NA
+"Flag Hill Farm","Reference","Silvopasture Reference","A1",0,"none","0","none","no","AP","","","0","10","NULL",NA,"NULL",NA
+"Flag Hill Farm","Reference","Silvopasture Reference","A2",0,"none","0","none","no","AP","","","0","10","NULL",NA,"NULL",NA
+"Flag Hill Farm","Reference","Silvopasture Reference","A3",0,"none","0","none","no","AP","","","0","10","NULL",NA,"NULL",NA
+"Flag Hill Farm","Reference","Silvopasture Reference","B1",0,"none","0","none","no","AP","","","0","10","NULL",NA,"NULL",NA
+"Flag Hill Farm","Reference","Silvopasture Reference","B2",0,"Thatch","5","none","no","AP","","","0","10","NULL",NA,"NULL",NA
+"Flag Hill Farm","Reference","Silvopasture Reference","B3",0,"Thatch","10","none","no","AP","","","0","10","NULL",NA,"NULL",NA
+"East Hill Tree Farm","Polyculture","Polyculture","A1",0,"Thatch","20","low","no","AP","","","0","10","NULL",NA,"NULL",NA
+"East Hill Tree Farm","Polyculture","Polyculture","A2",0,"Thatch","5","none","no","AP","","","0","10","NULL",NA,"NULL",NA
+"East Hill Tree Farm","Polyculture","Polyculture","A3",15,"Thatch","10","medium","yes","AP","","","0","10","NULL",NA,"NULL",NA
+"East Hill Tree Farm","Polyculture","Polyculture","A4",0,"Thatch","10","none","no","AP","","","0","10","NULL",NA,"NULL",NA
+"East Hill Tree Farm","Polyculture","Polyculture","A5",0,"Thatch","10","none","no","AP","","","0","10","NULL",NA,"NULL",NA
+"East Hill Tree Farm","Polyculture","Polyculture","A6",5,"Thatch","5","medium","no","AP","","","0","10","NULL",NA,"NULL",NA
+"East Hill Tree Farm","Reference","Polyculture Reference","A1",0,"none","0","none","no","AP","","","0","10","NULL",NA,"NULL",NA
+"East Hill Tree Farm","Reference","Polyculture Reference","A2",0,"none","0","none","no","AP","","","0","10","NULL",NA,"NULL",NA
+"East Hill Tree Farm","Reference","Polyculture Reference","A3",0,"none","0","none","no","AP","","","0","10","NULL",NA,"NULL",NA
+"East Hill Tree Farm","Reference","Polyculture Reference","B1",0,"none","0","none","no","AP","","","0","10","NULL",NA,"NULL",NA
+"East Hill Tree Farm","Reference","Polyculture Reference","B2",0,"none","0","none","no","AP","","","0","10","NULL",NA,"NULL",NA
+"East Hill Tree Farm","Reference","Polyculture Reference","B3",0,"none","0","none","no","AP","","","0","10","NULL",NA,"NULL",NA
+"Whole Systems Design","Apple Silvopasture","Silvopasture","A1",0,"ND","ND","ND","ND","AP","","","0","10","NULL",NA,"NULL",NA
+"Whole Systems Design","Apple Silvopasture","Silvopasture","A2",5,"none","0","none","no","AP","","","0","10","NULL",NA,"NULL",NA
+"Whole Systems Design","Apple Silvopasture","Silvopasture","A3",10,"none","0","none","no","AP","","","0","10","NULL",NA,"NULL",NA
+"Whole Systems Design","Apple Silvopasture","Silvopasture","B1",0,"ND","ND","ND","ND","AP","","","0","10","NULL",NA,"NULL",NA
+"Whole Systems Design","Apple Silvopasture","Silvopasture","B2",5,"leaves","5","low","no","AP","","","0","10","NULL",NA,"NULL",NA
+"Whole Systems Design","Apple Silvopasture","Silvopasture","B3",0,"none","0","none","no","AP","","","0","10","NULL",NA,"NULL",NA
+"Whole Systems Design","Seaberry Silvopasture","Silvopasture","A1",0,"woodchips","5","none","no","AP","","","0","10","NULL",NA,"NULL",NA
+"Whole Systems Design","Seaberry Silvopasture","Silvopasture","A2",0,"none","0","none","no","AP","","","0","10","NULL",NA,"NULL",NA
+"Whole Systems Design","Seaberry Silvopasture","Silvopasture","A3",0,"none","0","none","no","AP","","","0","10","NULL",NA,"NULL",NA
+"Whole Systems Design","Seaberry Silvopasture","Silvopasture","A4",0,"none","0","none","no","AP","","","0","10","NULL",NA,"NULL",NA
+"Whole Systems Design","Seaberry Silvopasture","Silvopasture","B1",5,"none","0","none","no","AP","","","0","10","NULL",NA,"NULL",NA
+"Whole Systems Design","Seaberry Silvopasture","Silvopasture","B2",5,"none","0","none","no","AP","","","0","10","NULL",NA,"NULL",NA
+"Whole Systems Design","Silvopasture 1","Silvopasture","A1",0,"none","0","none","no","AP","","","0","10","NULL",NA,"NULL",NA
+"Whole Systems Design","Silvopasture 1","Silvopasture","A2",0,"Leaves","5","low","no","AP","","","0","10","NULL",NA,"NULL",NA
+"Whole Systems Design","Silvopasture 1","Silvopasture","A3",0,"Leaves","10","none","no","AP","","","0","10","NULL",NA,"NULL",NA
+"Whole Systems Design","Silvopasture 1","Silvopasture","B1",0,"Leaves","10","low","no","AP","","","0","10","NULL",NA,"NULL",NA
+"Whole Systems Design","Silvopasture 1","Silvopasture","B3",0,"none","0","none","no","AP","","","0","10","NULL",NA,"NULL",NA
+"Blue Hills Foundation","Silvopasture 1","Silvopasture","B1",0,"Pine Litter","50","high","no","O","A","","0","9","9",10,"NULL",NA
+"Blue Hills Foundation","Silvopasture 1","Silvopasture","B2",0,"Pine Litter","60","high","yes","O","A","","0","6","6",10,"NULL",NA
+"Blue Hills Foundation","Reference","Silvopasture Reference","A1",0,"Pine Litter","20","high","yes","O","A","","0","4","4",10,"NULL",NA
+"Blue Hills Foundation","Reference","Silvopasture Reference","A2",5,"Mixed Litter","30","high","yes","O","A","","0","6","6",10,"NULL",NA
+"Blue Hills Foundation","Reference","Silvopasture Reference","A3",0,"Pine Litter","30","high","yes","O","A","","0","7","7",10,"NULL",NA
+"Blue Hills Foundation","Reference","Silvopasture Reference","B1",0,"Mixed Litter","45","high","yes","O","A","","0","5.5","5.5",10,"NULL",NA
+"Blue Hills Foundation","Reference","Silvopasture Reference","B2",0,"Leaves","45","high","yes","O","","","0","6.5","NULL",NA,"NULL",NA
+"Blue Hills Foundation","Reference","Silvopasture Reference","B2",0,"Leaves","40","high","yes","","A","","NULL",NA,"6.5",10,"NULL",NA
+"Blue Hills Foundation","Reference","Silvopasture Reference","B3",0,"Leaves","40","high","yes","O","A","","0","6.5","6.5",10,"NULL",NA
+"Perfect Circle","Reference","Polyculture Reference","A1",0,"Thatch","5","none","no","AP, AP","","","c(""0","10"", ""0","NULL",NA,"NULL",NA
+"Perfect Circle","Reference","Polyculture Reference","A2",0,"Thatch","5","none","no","AP, AP","","","c(""0","10"", ""0","NULL",NA,"NULL",NA
+"Perfect Circle","Reference","Polyculture Reference","A3",0,"Thatch","10","none","no","AP, AP","","","c(""0","10"", ""0","NULL",NA,"NULL",NA
+"Perfect Circle","Reference","Polyculture Reference","A4",0,"Thatch","5","none","no","AP, AP","","","c(""0","10"", ""0","NULL",NA,"NULL",NA
+"Perfect Circle","Reference","Polyculture Reference","A5",5,"Thatch","10","none","no","AP, AP","","","c(""0","10"", ""0","NULL",NA,"NULL",NA
+"Perfect Circle","Reference","Polyculture Reference","A6",0,"Thatch","5","none","no","AP, AP","","","c(""0","10"", ""0","NULL",NA,"NULL",NA
+"Perfect Circle","Polyculture","Polyculture","A1",5,"Thatch","10","none","no","AP","","","0","10","NULL",NA,"NULL",NA
+"Perfect Circle","Polyculture","Polyculture","A2",0,"Thatch","5","none","no","AP","","","0","10","NULL",NA,"NULL",NA
+"Perfect Circle","Polyculture","Polyculture","A3",5,"Thatch","5","none","no","AP","","","0","10","NULL",NA,"NULL",NA
+"Perfect Circle","Polyculture","Polyculture","B1",10,"Thatch","10","none","no","AP","","","0","10","NULL",NA,"NULL",NA
+"Perfect Circle","Polyculture","Polyculture","B2",5,"Thatch","10","none","no","AP","","","0","10","NULL",NA,"NULL",NA
+"Perfect Circle","Polyculture","Polyculture","B3",20,"Thatch","10","none","no","AP","","","0","10","NULL",NA,"NULL",NA
+"Howling Wolf","Silvopasture","Silvopasture","A1",5,"Thatch","10","none","no","AP","","","0","10","NULL",NA,"NULL",NA
+"Howling Wolf","Silvopasture","Silvopasture","A2",5,"Pine Litter","10","none","no","AP","","","0","10","NULL",NA,"NULL",NA
+"Howling Wolf","Silvopasture","Silvopasture","A3",5,"Thatch","20","none","no","AP","","","0","10","NULL",NA,"NULL",NA
+"Howling Wolf","Silvopasture","Silvopasture","A4",0,"Thatch","10","none","no","AP","","","0","10","NULL",NA,"NULL",NA
+"Howling Wolf","Silvopasture","Silvopasture","B1",0,"Thatch","10","none","no","AP","","","0","10","NULL",NA,"NULL",NA
+"Howling Wolf","Silvopasture","Silvopasture","B2",0,"Thatch","10","none","no","AP","","","0","10","NULL",NA,"NULL",NA
+"Common Hill Farm","Silvopasture","Silvopasture","A1",0,"Leaves","20","none","no","O","A","B","0","3.5","3.5",6.5,"6.5",10
+"Common Hill Farm","Silvopasture","Silvopasture","A2",5,"Leaves","5","none","no","A","","","0","10","NULL",NA,"NULL",NA
+"Common Hill Farm","Silvopasture","Silvopasture","A3",5,"Leaves","40","low","no","O","A","","0","2","2",10,"NULL",NA
+"Common Hill Farm","Silvopasture","Silvopasture","B1",0,"none","0","none","no","O","A","","0","4.2","4.2",10,"NULL",NA
+"Common Hill Farm","Silvopasture","Silvopasture","B2",0,"Leaves","25","low","no","O","E","A","0","4.5","4.5",6,"6",10
+"Common Hill Farm","Silvopasture","Silvopasture","B3",5,"Leaves/Mulch","45","none","no","O","A","","0","5","5",10,"NULL",NA
+"Common Hill Farm","Reference","Silvopasture Reference","A1",0,"Leaves","5","low","no","O","A","E","0","3","3",5,"5",10
+"Common Hill Farm","Reference","Silvopasture Reference","A2",5,"Leaves","60","low","yes","O","A","","0","4","4",10,"NULL",NA
+"Common Hill Farm","Reference","Silvopasture Reference","A3",5,"Leaves","75","low","no","A","","","0","10","NULL",NA,"NULL",NA
+"Common Hill Farm","Reference","Silvopasture Reference","B1",0,"Leaves","100","none","no","O","A","","0","2.7","2.7",10,"NULL",NA
+"Common Hill Farm","Reference","Silvopasture Reference","B2",NA,"ND","ND","ND","ND","","","","NULL",NA,"NULL",NA,"NULL",NA
+"Common Hill Farm","Reference","Silvopasture Reference","B3",0,"Leaves","80","low","no","","","","NULL",NA,"NULL",NA,"NULL",NA
+"Quill's End","Silvopasture","Silvopasture","A1",0,"none","0","low","no","AP","","","0","10","NULL",NA,"NULL",NA
+"Quill's End","Silvopasture","Silvopasture","A2",5,"Leaves","5","low","no","O","A","","0","6","6",10,"NULL",NA
+"Quill's End","Silvopasture","Silvopasture","A3",5,"Thatch","10","low","no","A","","","0","10","NULL",NA,"NULL",NA
+"Quill's End","Silvopasture","Silvopasture","B1",5,"Leaves","15","low","yes","A","","","0","10","NULL",NA,"NULL",NA
+"Quill's End","Silvopasture","Silvopasture","B2",15,"Leaves","30","medium","yes","A","","","0","10","NULL",NA,"NULL",NA
+"Quill's End","Silvopasture","Silvopasture","B3",10,"Leaves","10","medium","yes","A","","","0","10","NULL",NA,"NULL",NA
+"Quill's End","Reference","Silvopasture Reference","A1",5,"Leaves","45","low","yes","O","A","","0","3.5","3.5",10,"NULL",NA
+"Quill's End","Reference","Silvopasture Reference","A2",5,"Leaves","15","low","no","O","A","","0","3","3",10,"NULL",NA
+"Quill's End","Reference","Silvopasture Reference","B1",0,"Leaves","75","low","no","O","A","","0","3","3",10,"NULL",NA
+"Quill's End","Reference","Silvopasture Reference","B2",0,"none","0","low","no","O","A","","0","2","2",10,"NULL",NA
+"Big River Chestnuts","Alley Cropping","Alley Cropping","A1",5,"Woodchips","0","none","no","AP","","","0","10","NULL",NA,"NULL",NA
+"Big River Chestnuts","Alley Cropping","Alley Cropping","A2",0,"Woodchips","5","none","no","AP","","","0","10","NULL",NA,"NULL",NA
+"Big River Chestnuts","Alley Cropping","Alley Cropping","A3",5,"Woodchips","5","none","no","AP","","","0","10","NULL",NA,"NULL",NA
+"Big River Chestnuts","Alley Cropping","Alley Cropping","B1",0,"Woodchips","0","none","no","AP","","","0","10","NULL",NA,"NULL",NA
+"Big River Chestnuts","Alley Cropping","Alley Cropping","B2",5,"Woodchips","5","none","no","AP","","","0","10","NULL",NA,"NULL",NA
+"Big River Chestnuts","Alley Cropping","Alley Cropping","B3",5,"Woodchips","5","none","no","AP","","","0","10","NULL",NA,"NULL",NA
+"Big River Chestnuts","Silvopasture","Silvopasture","A1",5,"Thatch","5","none","no","AP","","","0","10","NULL",NA,"NULL",NA
+"Big River Chestnuts","Silvopasture","Silvopasture","A2",0,"none","0","none","no","AP","","","0","10","NULL",NA,"NULL",NA
+"Big River Chestnuts","Silvopasture","Silvopasture","A3",5,"none","0","none","no","AP","","","0","10","NULL",NA,"NULL",NA
+"Big River Chestnuts","Silvopasture","Silvopasture","B1",0,"none","0","none","no","AP","","","0","10","NULL",NA,"NULL",NA
+"Big River Chestnuts","Silvopasture","Silvopasture","B2",5,"none","0","none","no","AP","","","0","10","NULL",NA,"NULL",NA
+"Big River Chestnuts","Silvopasture","Silvopasture","B3",5,"none","0","none","no","AP","","","0","10","NULL",NA,"NULL",NA
+"Big River Chestnuts","Reference","Silvopasture Reference","A1",25,"ND","ND","ND","ND","AP","","","0","10","NULL",NA,"NULL",NA
+"Big River Chestnuts","Reference","Silvopasture Reference","A2",0,"ND","ND","ND","ND","AP","","","0","10","NULL",NA,"NULL",NA
+"Big River Chestnuts","Reference","Silvopasture Reference","A3",0,"ND","ND","ND","ND","AP","","","0","10","NULL",NA,"NULL",NA
+"Big River Chestnuts","Reference","Silvopasture Reference","B1",0,"ND","ND","ND","ND","AP","","","0","10","NULL",NA,"NULL",NA
+"Big River Chestnuts","Reference","Silvopasture Reference","B2",0,"ND","ND","ND","ND","AP","","","0","10","NULL",NA,"NULL",NA
+"Big River Chestnuts","Reference","Silvopasture Reference","B3",5,"ND","ND","ND","ND","AP","","","0","10","NULL",NA,"NULL",NA
+"Howling Wolf","Reference","Silvopasture Reference","A1",0,"Thatch","5","none","no","AP","","","0","10","NULL",NA,"NULL",NA
+"Howling Wolf","Reference","Silvopasture Reference","A2",5,"Thatch","5","low","yes","AP","","","0","10","NULL",NA,"NULL",NA
+"Howling Wolf","Reference","Silvopasture Reference","B1",0,"Thatch","5","none","no","AP","","","0","10","NULL",NA,"NULL",NA
+"Howling Wolf","Reference","Silvopasture Reference","B3",0,"none","0","none","no","AP","","","0","10","NULL",NA,"NULL",NA
+"Howling Wolf","Reference","Silvopasture Reference","B4",0,"Thatch","5","none","no","AP","","","0","10","NULL",NA,"NULL",NA
+"Heart's Content","Reference","Forest Garden Reference","A1",0,"Mixed Litter","60","medium","yes","O","A","","0","4.5","4.5",10,"NULL",NA
+"Heart's Content","Reference","Forest Garden Reference","A2",0,"Mixed Litter","65","medium","yes","O","A","","0","4","4",10,"NULL",NA
+"Heart's Content","Reference","Forest Garden Reference","A3",0,"Mixed Litter","50","medium","yes","O","A","","0","5","5",10,"NULL",NA
+"Heart's Content","Reference","Forest Garden Reference","B1",NA,NA,NA,NA,NA,"O","A","","0","3","3",10,"NULL",NA
+"Heart's Content","Reference","Forest Garden Reference","B2",0,"Leaves","70","medium","no","O","A","","0","2","2",10,"NULL",NA
+"Heart's Content","Reference","Forest Garden Reference","B3",5,"Leaves","75","medium","no","O","A","","0","4.5","4.5",10,"NULL",NA
+"Squier Family Farm","Silvopasture","Silvopasture","A1",10,"Leaves","5","low","yes","AP","","","0","10","NULL",NA,"NULL",NA
+"Squier Family Farm","Silvopasture","Silvopasture","A2",10,"Leaves","5","medium","no","AP","","","0","10","NULL",NA,"NULL",NA
+"Squier Family Farm","Silvopasture","Silvopasture","A3",5,"Leaves","5","low","no","AP","","","0","10","NULL",NA,"NULL",NA
+"Squier Family Farm","Silvopasture","Silvopasture","B1",10,"none","0","low","no","AP","","","0","10","NULL",NA,"NULL",NA
+"Squier Family Farm","Silvopasture","Silvopasture","B2",5,"none","0","low","yes","AP","","","0","10","NULL",NA,"NULL",NA
+"Squier Family Farm","Silvopasture","Silvopasture","B3",10,"none","0","none","no","AP","","","0","10","NULL",NA,"NULL",NA
+"Squier Family Farm","Silvopasture","Silvopasture","B4",5,"none","0","none","no","AP","","","0","10","NULL",NA,"NULL",NA
+"Squier Family Farm","Silvopasture Ref","Silvopasture Reference","A1",0,"none","0","none","no","AP","","","0","10","NULL",NA,"NULL",NA
+"Squier Family Farm","Silvopasture Ref","Silvopasture Reference","A2",0,"none","0","none","no","AP","","","0","10","NULL",NA,"NULL",NA
+"Squier Family Farm","Silvopasture Ref","Silvopasture Reference","A3",0,"none","0","none","no","AP","","","0","10","NULL",NA,"NULL",NA
+"Squier Family Farm","Silvopasture Ref","Silvopasture Reference","A4",0,"none","0","none","no","AP","","","0","10","NULL",NA,"NULL",NA
+"Squier Family Farm","Silvopasture Ref","Silvopasture Reference","A5",0,"none","0","none","no","AP","","","0","10","NULL",NA,"NULL",NA
+"Squier Family Farm","Silvopasture Ref","Silvopasture Reference","A6",0,"none","0","none","no","AP","","","0","10","NULL",NA,"NULL",NA
+"Valley Clayplain","Mixed Fruit Alleys","Silvopasture","A1",10,"Mulch","15","low","yes","AP","","","0","10","NULL",NA,"NULL",NA
+"Valley Clayplain","Mixed Fruit Alleys","Silvopasture","A2",0,"Mulch","25","none","no","AP","","","0","10","NULL",NA,"NULL",NA
+"Valley Clayplain","Mixed Fruit Alleys","Silvopasture","A3",0,"Mulch","10","none","no","AP","","","0","10","NULL",NA,"NULL",NA
+"Valley Clayplain","Mixed Fruit Alleys","Silvopasture","A4",0,"Mulch","10","none","no","AP","","","0","10","NULL",NA,"NULL",NA
+"Valley Clayplain","Mixed Fruit Alleys","Silvopasture","B1",5,"none","0","none","no","AP","","","0","10","NULL",NA,"NULL",NA
+"Valley Clayplain","Mixed Fruit Alleys","Silvopasture","B2",0,"Mulch","5","none","no","AP","","","0","10","NULL",NA,"NULL",NA
+"Valley Clayplain","Mixed Fruit Alleys","Silvopasture","B3",0,"Mulch","5","none","no","AP","","","0","10","NULL",NA,"NULL",NA
+"Valley Clayplain","Mixed Fruit Alleys","Silvopasture","B4",0,"Mulch","5","none","no","AP","","","0","10","NULL",NA,"NULL",NA
+"Valley Clayplain","Black Locust Coppice","Silvopasture","A1",15,"Leaves","10","none","no","AP","","","0","10","NULL",NA,"NULL",NA
+"Valley Clayplain","Black Locust Coppice","Silvopasture","A2",5,"Thatch","10","none","no","AP","","","0","10","NULL",NA,"NULL",NA
+"Valley Clayplain","Black Locust Coppice","Silvopasture","A3",10,"Thatch","10","none","no","AP","","","0","10","NULL",NA,"NULL",NA
+"Valley Clayplain","Black Locust Coppice","Silvopasture","A4",10,"Leaves","20","none","no","AP","","","0","10","NULL",NA,"NULL",NA
+"Valley Clayplain","Heartnut Hillside","Silvopasture","A1",0,"Mulch","5","none","no","AP","","","0","10","NULL",NA,"NULL",NA
+"Valley Clayplain","Heartnut Hillside","Silvopasture","A2",0,"Mulch","5","none","no","AP","","","0","10","NULL",NA,"NULL",NA
+"Valley Clayplain","Heartnut Hillside","Silvopasture","A3",0,"none","0","none","no","AP","","","0","10","NULL",NA,"NULL",NA
+"Valley Clayplain","Heartnut Hillside","Silvopasture","B1",5,"none","0","none","no","AP","","","0","10","NULL",NA,"NULL",NA
+"Valley Clayplain","Heartnut Hillside","Silvopasture","B2",0,"Mulch","5","none","no","AP","","","0","10","NULL",NA,"NULL",NA
+"Valley Clayplain","Heartnut Hillside","Silvopasture","B3",0,"none","0","none","no","AP","","","0","10","NULL",NA,"NULL",NA
+"Valley Clayplain","Vegetable Garden","Silvopasture","A1",15,"Mulch","15","none","no","AP","","","0","10","NULL",NA,"NULL",NA
+"Valley Clayplain","Vegetable Garden","Silvopasture","A2",10,"Mulch","15","none","no","AP","","","0","10","NULL",NA,"NULL",NA
+"Valley Clayplain","Vegetable Garden","Silvopasture","A3",0,"Mulch","40","none","no","AP","","","0","10","NULL",NA,"NULL",NA
+"Valley Clayplain","System Reference","Silvopasture Reference","A1",0,"Thatch","5","none","no","AP","","","0","10","NULL",NA,"NULL",NA
+"Valley Clayplain","System Reference","Silvopasture Reference","A2",0,"none","0","none","no","AP","","","0","10","NULL",NA,"NULL",NA
+"Valley Clayplain","System Reference","Silvopasture Reference","A3",0,"Thatch","5","none","no","AP","","","0","10","NULL",NA,"NULL",NA
+"Valley Clayplain","System Reference","Silvopasture Reference","B1",0,"none","0","none","no","AP","","","0","10","NULL",NA,"NULL",NA
+"Valley Clayplain","System Reference","Silvopasture Reference","B2",0,"Thatch","5","none","no","AP","","","0","10","NULL",NA,"NULL",NA
+"Valley Clayplain","System Reference","Silvopasture Reference","B3",0,"Thatch","5","none","no","AP","","","0","10","NULL",NA,"NULL",NA
+"BFFC","Edgewood","Forest Garden","A1",10,"Woodchips","20","none","no","AP","","","0","10","NULL",NA,"NULL",NA
+"BFFC","Ireland","Forest Garden","B1",5,"Leaves/Woodchips","55","low","yes","AP","","","0","10","NULL",NA,"NULL",NA
+"BFFC","Mass Audubon","Forest Garden","C1",0,"none","0","none","no","AP","","","0","10","NULL",NA,"NULL",NA
+"BFFC","Mass Audubon","Forest Garden","C2",5,"Woodchips","15","low","yes","AP","","","0","10","NULL",NA,"NULL",NA
+"BFFC","Mass Audubon","Forest Garden","C3",0,"Leaves","5","none","no","AP","","","0","10","NULL",NA,"NULL",NA
+"BFFC","Mass Audubon","Forest Garden","C4",0,"Leaves","5","none","no","AP","","","0","10","NULL",NA,"NULL",NA
+"Breadtree Farms","Silvopasture","Silvopasture","A1",5,"none","0","none","no","AP","","","0","10","NULL",NA,"NULL",NA
+"Breadtree Farms","Silvopasture","Silvopasture","A2",5,"none","0","none","no","AP","","","0","10","NULL",NA,"NULL",NA
+"Breadtree Farms","Silvopasture","Silvopasture","A3",5,"none","0","none","no","AP","","","0","10","NULL",NA,"NULL",NA
+"Breadtree Farms","Silvopasture","Silvopasture","B1",0,"none","0","none","no","AP","","","0","10","NULL",NA,"NULL",NA
+"Breadtree Farms","Silvopasture","Silvopasture","B2",0,"none","0","none","no","AP","","","0","10","NULL",NA,"NULL",NA
+"Breadtree Farms","Silvopasture","Silvopasture","B3",0,"none","0","none","no","AP","","","0","10","NULL",NA,"NULL",NA
+"Breadtree Farms","Silvopasture Ref","Silvopasture Reference","A1",70,"none","0","none","no","AP","","","0","10","NULL",NA,"NULL",NA
+"Breadtree Farms","Silvopasture Ref","Silvopasture Reference","A2",95,"none","0","none","no","AP","","","0","10","NULL",NA,"NULL",NA
+"Breadtree Farms","Silvopasture Ref","Silvopasture Reference","A3",95,"none","0","none","no","AP","","","0","10","NULL",NA,"NULL",NA
+"Breadtree Farms","Silvopasture Ref","Silvopasture Reference","B1",20,"none","0","none","no","AP","","","0","10","NULL",NA,"NULL",NA
+"Breadtree Farms","Silvopasture Ref","Silvopasture Reference","B2",60,"none","0","none","no","AP","","","0","10","NULL",NA,"NULL",NA
+"Breadtree Farms","Silvopasture Ref","Silvopasture Reference","B3",70,"none","0","none","no","AP","","","0","10","NULL",NA,"NULL",NA
+"Wild Hudson Valley","Forest Farm","Forest Farm","A1",0,"Leaves","75","low","yes","O","A","","0","3.5","3.5",10,"NULL",NA
+"Wild Hudson Valley","Forest Farm","Forest Farm","A2",0,"Leaves","70","low","no","O","A","","0","2","2",10,"NULL",NA
+"Wild Hudson Valley","Forest Farm","Forest Farm","A3",5,"Leaves","70","high","yes","O","A","","0","2.5","2.5",10,"NULL",NA
+"Wild Hudson Valley","Forest Farm","Forest Farm","B1",0,"Leaves","100","medium","no","O","A","","0","4.5","4.5",10,"NULL",NA
+"Wild Hudson Valley","Forest Farm","Forest Farm","B2",0,"Leaves","95","medium","yes","O","A","","0","2.5","2.5",10,"NULL",NA
+"Wild Hudson Valley","Forest Farm","Forest Farm","B3",NA,NA,NA,"medium","yes","O","A","","0","1.5","1.5",10,"NULL",NA
+"Carr's Cidery","Silvopasture","Silvopasture","A1",10,"Thatch","60","none","no","AP","","","0","10","NULL",NA,"NULL",NA
+"Carr's Cidery","Silvopasture","Silvopasture","A2",20,"Thatch","50","none","no","AP","","","0","10","NULL",NA,"NULL",NA
+"Carr's Cidery","Silvopasture","Silvopasture","A3",15,"Thatch","20","none","no","AP","","","0","10","NULL",NA,"NULL",NA
+"Carr's Cidery","Silvopasture","Silvopasture","B1",10,"Thatch","20","none","no","AP","","","0","10","NULL",NA,"NULL",NA
+"Carr's Cidery","Silvopasture","Silvopasture","B2",0,"Thatch","30","none","no","AP","","","0","10","NULL",NA,"NULL",NA
+"Carr's Cidery","Silvopasture","Silvopasture","B3",5,"Thatch","10","none","no","AP","","","0","10","NULL",NA,"NULL",NA
+"Carr's Cidery","Silvopasture Reference","Silvopasture Reference","A1",5,"Thatch","10","none","no","AP","","","0","10","NULL",NA,"NULL",NA
+"Carr's Cidery","Silvopasture Reference","Silvopasture Reference","A2",5,"Thatch","10","none","no","AP","","","0","10","NULL",NA,"NULL",NA
+"Carr's Cidery","Silvopasture Reference","Silvopasture Reference","A3",5,"Thatch","10","none","no","AP","","","0","10","NULL",NA,"NULL",NA
+"Carr's Cidery","Silvopasture Reference","Silvopasture Reference","B1",10,"Thatch","10","none","no","AP","","","0","10","NULL",NA,"NULL",NA
+"Carr's Cidery","Silvopasture Reference","Silvopasture Reference","B2",5,"Thatch","10","none","no","AP","","","0","10","NULL",NA,"NULL",NA
+"Carr's Cidery","Silvopasture Reference","Silvopasture Reference","B3",5,"Thatch","10","none","no","AP","","","0","10","NULL",NA,"NULL",NA
+"Apple Creek","Silvopasture","Silvopasture","A1",0,"Leaves","15","low","no","O","A","","0","1","1",10,"NULL",NA
+"Apple Creek","Silvopasture","Silvopasture","A2",10,"Leaves","5","low","no","O","A","","0","2","2",10,"NULL",NA
+"Apple Creek","Silvopasture","Silvopasture","A3",15,"Leaves","5","medium","yes","O","A","","0","1.5","1.5",10,"NULL",NA
+"Apple Creek","Silvopasture","Silvopasture","A4",5,"Leaves","10","none","no","O","A","","0","1","1",10,"NULL",NA
+"Appleton","Oak Reference","Silvopasture Reference","A1",5,"none","0","none","no","AP","","","0","10","NULL",NA,"NULL",NA
+"Appleton","Oak Reference","Silvopasture Reference","A2",5,"none","0","none","no","AP","","","0","10","NULL",NA,"NULL",NA
+"Appleton","Oak Reference","Silvopasture Reference","A3",5,"none","0","none","no","AP","","","0","10","NULL",NA,"NULL",NA
+"Appleton","Oak Reference","Silvopasture Reference","B1",5,"none","0","none","no","AP","","","0","10","NULL",NA,"NULL",NA
+"Appleton","Oak Reference","Silvopasture Reference","B2",5,"none","0","none","no","AP","","","0","10","NULL",NA,"NULL",NA
+"Appleton","Oak Reference","Silvopasture Reference","B3",0,"none","0","none","no","AP","","","0","10","NULL",NA,"NULL",NA
+"Appleton","Oak Silvopasture","Silvopasture","A1",0,"Leaves","5","medium","yes","AP","","","0","10","NULL",NA,"NULL",NA
+"Appleton","Oak Silvopasture","Silvopasture","A2",5,"Leaves","5","none","no","AP","","","0","10","NULL",NA,"NULL",NA
+"Appleton","Oak Silvopasture","Silvopasture","A3",0,"none","0","none","no","AP","","","0","10","NULL",NA,"NULL",NA
+"Appleton","Oak Silvopasture","Silvopasture","B1",5,"Leaves","5","none","no","AP","","","0","10","NULL",NA,"NULL",NA
+"Appleton","Oak Silvopasture","Silvopasture","B2",5,"Leaves","10","low","no","AP","","","0","10","NULL",NA,"NULL",NA
+"Appleton","Oak Silvopasture","Silvopasture","B3",5,"Leaves","5","low","yes","AP","","","0","10","NULL",NA,"NULL",NA
+"Appleton","Pine Reference","Silvopasture Reference","A1",0,"Leaves","35","low","yes","AP","","","0","10","NULL",NA,"NULL",NA
+"Appleton","Pine Reference","Silvopasture Reference","A2",0,"Leaves","30","medium","yes","AP","","","0","10","NULL",NA,"NULL",NA
+"Appleton","Pine Reference","Silvopasture Reference","A3",0,"Leaves","100","medium","yes","AP","","","0","10","NULL",NA,"NULL",NA
+"Appleton","Pine Reference","Silvopasture Reference","A4",0,"Leaves","100","low","yes","AP","","","0","10","NULL",NA,"NULL",NA
+"Appleton","Pine Reference","Silvopasture Reference","A5",0,"Leaves","100","low","yes","AP","","","0","10","NULL",NA,"NULL",NA
+"Appleton","Pine Silvopasture","Silvopasture","A1",0,"Leaves","5","low","yes","O","A","","0","1","1",10,"NULL",NA
+"Appleton","Pine Silvopasture","Silvopasture","A2",0,"Leaves","5","low","yes","O","A","","0","1","1",10,"NULL",NA
+"Appleton","Pine Silvopasture","Silvopasture","A3",0,"Leaves","15","low","yes","O","A","","0","1","1",10,"NULL",NA
+"Appleton","Pine Silvopasture","Silvopasture","B1",0,"Pine Litter","80","low","yes","O","A","","0","1","1",10,"NULL",NA
+"Appleton","Pine Silvopasture","Silvopasture","B2",0,"Pine Litter","70","low","no","O","A","","0","2","2",10,"NULL",NA
+"Appleton","Pine Silvopasture","Silvopasture","B3",5,"Pine Litter","85","low","yes","O","A","","0","1","1",10,"NULL",NA
+"Apple Creek","Silvopasture","Silvopasture","A5",10,"Thatch","10","none","no","AP","","","0","10","NULL",NA,"NULL",NA
+"Apple Creek","Silvopasture","Silvopasture","A6",0,"Leaves","15","none","no","AP","","","0","10","NULL",NA,"NULL",NA
+"Apple Creek","Silvopasture Reference","Forest Reference","A1",0,"Leaves","60","medium","yes","O","A","","0","4","4",10,"NULL",NA
+"Apple Creek","Silvopasture Reference","Forest Reference","A2",0,"Leaves","60","medium","yes","O","A","","0","5","5",10,"NULL",NA
+"Apple Creek","Silvopasture Reference","Forest Reference","A3",0,"Leaves","55","medium","yes","O","A","","0","2","2",10,"NULL",NA
+"Apple Creek","Silvopasture Reference","Forest Reference","B1",15,"Leaves","80","high","yes","O","A","","0","4","4",10,"NULL",NA
+"Apple Creek","Silvopasture Reference","Forest Reference","B2",5,"Leaves","90","high","yes","O","A","","0","5","5",10,"NULL",NA
+"Apple Creek","Silvopasture Reference","Forest Reference","B3",5,"Leaves","85","high","yes","O","A","","0","6","6",10,"NULL",NA
+"White Oak","Silvopasture","Silvopasture","A1",20,"Leaves","60","medium","no","AP","","","0","10","NULL",NA,"NULL",NA
+"White Oak","Silvopasture","Silvopasture","A2",0,"Leaves","5","low","no","O","A","","0","2","2",10,"NULL",NA
+"White Oak","Silvopasture","Silvopasture","A3",0,"Leaves","30","none","no","AP","","","0","10","NULL",NA,"NULL",NA
+"White Oak","Silvopasture","Silvopasture","B1",0,"Leaves","25","low","yes","O","A","","0","2","2",10,"NULL",NA
+"White Oak","Silvopasture","Silvopasture","B2",5,"Leaves","10","low","yes","O","A","","0","1","1",10,"NULL",NA
+"White Oak","Silvopasture","Silvopasture","B3",5,"Leaves","15","low","no","AP","","","0","10","NULL",NA,"NULL",NA
+"White Oak","Silvopasture Reference","Forest Reference","A1",0,"Leaves","80","medium","yes","O","A","","0","3","3",10,"NULL",NA
+"White Oak","Silvopasture Reference","Forest Reference","A2",0,"Leaves","80","low","no","O","A","","0","5","5",10,"NULL",NA
+"White Oak","Silvopasture Reference","Forest Reference","A3",0,"Leaves","100","low","yes","O","A","","0","4.4","4.4",10,"NULL",NA
+"White Oak","Silvopasture Reference","Forest Reference","B1",0,"Leaves","95","low","no","O","A","","0","4","4",10,"NULL",NA
+"White Oak","Silvopasture Reference","Forest Reference","B2",0,"Leaves","100","medium","yes","O","A","","0","4.5","4.5",10,"NULL",NA
+"White Oak","Silvopasture Reference","Forest Reference","B3",0,"Leaves","100","low","no","O","A","","0","4","4",10,"NULL",NA
+"Harrison's","Silvopasture","Silvopasture","A1",0,"Thatch","5","none","no","AP","","","0","10","NULL",NA,"NULL",NA
+"Harrison's","Silvopasture","Silvopasture","A2",0,"Thatch","10","none","no","AP","","","0","10","NULL",NA,"NULL",NA
+"Harrison's","Silvopasture","Silvopasture","A3",0,"Thatch","10","none","no","AP","","","0","10","NULL",NA,"NULL",NA
+"Harrison's","Silvopasture","Silvopasture","A4",5,"Thatch","20","low","yes","AP","","","0","10","NULL",NA,"NULL",NA
+"Harrison's","Silvopasture","Silvopasture","B1",5,"Leaves","5","low","no","AP","","","0","10","NULL",NA,"NULL",NA
+"Harrison's","Silvopasture","Silvopasture","B2",0,"Leaves","15","none","no","AP","","","0","10","NULL",NA,"NULL",NA
+"Harrison's","Silvopasture","Silvopasture","B3",0,"Leaves","10","none","no","AP","","","0","10","NULL",NA,"NULL",NA
+"Harrison's","Silvopasture","Silvopasture","B4",5,"Leaves","20","low","yes","AP","","","0","10","NULL",NA,"NULL",NA
+"Harrison's","Silvopasture Reference","Silvopasture Reference","A1",0,"none","0","none","no","AP","","","0","10","NULL",NA,"NULL",NA
+"Harrison's","Silvopasture Reference","Silvopasture Reference","A2",0,"none","0","none","no","AP","","","0","10","NULL",NA,"NULL",NA
+"Harrison's","Silvopasture Reference","Silvopasture Reference","A3",0,"none","0","none","no","AP","","","0","10","NULL",NA,"NULL",NA
+"Harrison's","Silvopasture Reference","Silvopasture Reference","B1",0,"none","0","none","no","AP","","","0","10","NULL",NA,"NULL",NA
+"Harrison's","Silvopasture Reference","Silvopasture Reference","B2",0,"none","0","none","no","AP","","","0","10","NULL",NA,"NULL",NA
+"Harrison's","Silvopasture Reference","Silvopasture Reference","B3",0,"none","0","none","no","AP","","","0","10","NULL",NA,"NULL",NA
+"Wellsley","EEG","Forest Garden","A1",10,"Mixed Litter","15","low","no","AP","","","0","10","NULL",NA,"NULL",NA
+"Wellsley","EEG","Forest Garden","A2",5,NA,"25","low","no","AP","","","0","10","NULL",NA,"NULL",NA
+"Wellsley","EEG","Forest Garden","A3",0,"Leaves","15","none","no","AP","","","0","10","NULL",NA,"NULL",NA
+"Wellsley","EEG","Forest Garden","B1",0,"Leaves","10","none","no","AP","","","0","10","NULL",NA,"NULL",NA
+"Wellsley","EEG","Forest Garden","B2",5,"Woodchips","20","none","no","AP","","","0","10","NULL",NA,"NULL",NA
+"Wellsley","EEG","Forest Garden","B3",5,"Leaves","15","low","no","AP","","","0","10","NULL",NA,"NULL",NA
+"Wellsley","Forest Garden Reference","Forest Garden Reference","A1",0,"Leaves","15","none","no","AP","","","0","10","NULL",NA,"NULL",NA
+"Wellsley","Forest Garden Reference","Forest Garden Reference","A2",0,"Leaves","5","none","no","AP","","","0","10","NULL",NA,"NULL",NA
+"Wellsley","Forest Garden Reference","Forest Garden Reference","A3",0,"none","0","none","no","AP","","","0","10","NULL",NA,"NULL",NA
+"Wellsley","Forest Garden Reference","Forest Garden Reference","A4",0,"Leaves","5","none","no","AP","","","0","10","NULL",NA,"NULL",NA
+"Wellsley","Forest Garden Reference","Forest Garden Reference","A5",0,"none","0","none","no","AP","","","0","10","NULL",NA,"NULL",NA
+"Wellsley","Forest Garden Reference","Forest Garden Reference","A6",5,"Leaves","5","none","no","AP","","","0","10","NULL",NA,"NULL",NA
+"Wild Harmony","Silvopasture","Silvopasture","A1",0,"Pine Litter","5","medium","yes","O","A","","0","3.5","3.5",10,"NULL",NA
+"Wild Harmony","Silvopasture","Silvopasture","A2",5,"Leaves","5","low","no","O","A","","0","3.5","3.5",10,"NULL",NA
+"Wild Harmony","Silvopasture","Silvopasture","A3",5,"Mixed Litter","10","low","no","O","A","","0","4","4",10,"NULL",NA
+"Wild Harmony","Silvopasture","Silvopasture","B1",0,"Leaves","25","medium","yes","O","A","","0","3","3",10,"NULL",NA
+"Wild Harmony","Silvopasture","Silvopasture","B2",10,"Leaves","10","low","yes","O","A","","0","3","3",10,"NULL",NA
+"Wild Harmony","Silvopasture","Silvopasture","B3",5,"Leaves","20","low","no","O","A","","0","2","2",10,"NULL",NA
+"Wild Harmony","Silvopasture Reference","Forest Reference","A1",0,"Leaves","75","medium","yes","O","A","","0","4","4",10,"NULL",NA
+"Wild Harmony","Silvopasture Reference","Forest Reference","A2",0,"Leaves","50","high","yes","O","A","","0","1","1",10,"NULL",NA
+"Wild Harmony","Silvopasture Reference","Forest Reference","A3",0,"Mixed Litter","100","low","yes","O","A","","0","5.5","5.5",10,"NULL",NA
+"Wild Harmony","Silvopasture Reference","Forest Reference","B1",0,"Leaves","65","medium","yes","O","A","","0","7","7",10,"NULL",NA
+"Wild Harmony","Silvopasture Reference","Forest Reference","B2",0,"Mixed Litter","100","medium","yes","O","A","","0","6","6",10,"NULL",NA
+"Wild Harmony","Silvopasture Reference","Forest Reference","B3",0,"Mixed Litter","100","medium","no","O","A","","0","6","6",10,"NULL",NA

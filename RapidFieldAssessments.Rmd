@@ -35,6 +35,7 @@ library(fgeo.analyze)
 library(viridisLite)
 library(RColorBrewer)
 library(basictabler)
+library(writexl)
 ```
 
 ## Soil data pivot to create separate columns for each horizon depth and to 
@@ -256,5 +257,13 @@ silvo_wide <- Silvopasture %>%
                     mulch_leaves_per_cover, thatch_percent, forage_yield_in), 
     names_glue = "{.value}_subplot_{subplot}" # This will rename the columns with subplot suffixes
   )
+```
+```{r make tables}
+soils_new_clean <- soils_new_clean %>%
+  mutate(across(where(is.list), ~ sapply(., toString)))
+write.csv(soils_new_clean, file = "soils_new.csv", row.names = FALSE)
+silvo_wide <- silvo_wide %>%
+  mutate(across(where(is.list), ~ sapply(., toString)))
+write.csv(silvo_wide, file = "silvo_wide.csv", row.names = FALSE)
 ```
 
