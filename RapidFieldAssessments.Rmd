@@ -34,6 +34,7 @@ library(ggsci)
 library(fgeo.analyze)
 library(viridisLite)
 library(RColorBrewer)
+library(basictabler)
 ```
 
 ## Soil data pivot to create separate columns for each horizon depth and to 
@@ -43,7 +44,7 @@ library(RColorBrewer)
 #  select(-Horizon_1, -Horizon_1_depth, -Horizon_2, -Horizon_2_depth, 
  #        -Horizon_3, - Horizon_3_depth)
 
-reshaped_soils <- cleaned_data %>%
+reshaped_soils <- Soils %>%
   pivot_wider(names_from = horizon_number, 
               values_from = c(horizon_type, depth_cm),
               names_sep = "_horizon_")
@@ -59,18 +60,30 @@ soils_new_clean <- soils_new %>%
 ```{r soil summary stats}
 ## adjust to include plots that have no O horizon
 ##make boxplots of soil depth by horizon type
-o_horizon_data <- soils_new %>%
-  filter(horizon_type_horizon_1 == "O")
+#o_horizon_data <- soils_new %>%
+#  filter(horizon_type_horizon_1 == "O")
+separate_depth_horizon <- function(soils_new_clean, depth_col) {
+  soils_new_clean %>%
+    separate(!!sym(depth_col), into = c(paste0(depth_col, "_start"), paste0(depth_col, "_end")), 
+             sep = "-", convert = TRUE, fill = "right")
+}
 
-soils_final <- o_horizon_data %>%
-  separate(depth_cm_horizon_1, into = c("h1_depth_start", "h1_depth_end"), 
-           sep = "-", convert = TRUE)
+# Apply the function to each depth horizon column
+soils_new_clean <- soils_new_clean %>%
+  separate_depth_horizon("depth_cm_horizon_1") %>%
+  separate_depth_horizon("depth_cm_horizon_2") %>%
+  separate_depth_horizon("depth_cm_horizon_3")
+
+#soils_final <- soils_new_clean %>%
+#  separate(depth_cm_horizon_1, into = c("h1_depth_start", "h1_depth_end"), 
+      #     sep = "-", convert = TRUE)
+##replicate this for all horizons to split entire dataset by hyphen
 
 soils_final %>%
   summarize(
-    mean_depth_end = mean(depth_end),
-    median_depth_end = median(depth_end),
-    sd_depth_end = sd(depth_end))
+    mean_depth_end = mean(h1_depth_end),
+    median_depth_end = median(h1_depth_end),
+    sd_depth_end = sd(h1_depth_end))
 ```
 ## Summary stats mulch, bare ground, CWD Soils data
 
